@@ -6,6 +6,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="font.css">
   <link rel="stylesheet" href="style.css">
+  <script src="./script.js" defer></script>
   <title>Frontend Mentor | Age calculator app</title>
 </head>
 <body>
@@ -13,14 +14,15 @@
     <div class="container">
       <div class="dateUser">
         <label for="day">DAY</label>
-        <input type="text" value="DD">
+        <input type="text" id="day" value="DD">
         <label for="month">MONTH</label>
-        <input type="text" value="MM">
+        <input type="text" id="month" value="MM">
         <label for="year">YEAR</label>
-        <input type="text" value="YYYY">
+        <input type="text" id="year" value="YYYY">
       </div>
       <div class="lineValid">
         <hr>
+        <button id="btn">OK</button>
       </div>
       <div class="result">
         <p><span>--</span>years</p>

@@ -85,6 +85,16 @@ hr {
 	border-bottom: 1px solid var(--Lightgrey);
 }
 
+#btn {
+	background-color: var(--Purple);
+	color: var(--White);
+	width: 96px;
+	aspect-ratio: 1 / 1;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
 p {
 	font-weight: 800i;
 	font-size: 104px;
