@@ -1,0 +1,99 @@
+:root {
+	/* Primary */
+	--Purple: hsl(259, 100%, 65%);
+	--LightRed: hsl(0, 100%, 67%);
+	/* Neutral */
+	--White: hsl(0, 0%, 100%);
+	--OffWhite: hsl(0, 0%, 94%);
+	--Lightgrey: hsl(0, 0%, 86%);
+	--SmokeyGrey: hsl(0, 1%, 44%);
+	--OffBlack: hsl(0, 0%, 8%);
+	/* Font-Size */
+	--inputs: 32px;
+	/* Weight */
+	--small: 400i;
+	--medium: 700;
+	--big: 800i;
+}
+
+*, ::before, ::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100vh;
+	font-family: 'Poppins';
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--OffWhite);
+}
+
+.app {
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	background-color: var(--White);
+	padding: 56px;
+	border-radius: 24px 24px 200px 24px;
+}
+
+.dateUser {
+	display: flex;
+	flex-flow: column wrap;
+	height: 101px;
+	width: 728px;
+}
+
+label {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 21px;
+	letter-spacing: 0.25em;
+	color: var(--SmokeyGrey);
+}
+
+input {
+	height: 72px;
+	width: 160px;
+	line-height: 48px;
+	font-weight: 700;
+	opacity: 0.5;
+	font-size: var(--inputs);
+	border-radius: 8px;
+	padding: 12px 24px 12px 24px;
+}
+
+.lineValid {
+	height: 96px;
+	display: flex;
+	align-items: center;
+}
+
+hr {
+	width: 632px;
+	height: 1px;
+	border: none;
+	border-bottom: 1px solid var(--Lightgrey);
+}
+
+p {
+	font-weight: 800i;
+	font-size: 104px;
+	line-height: 114.4px;
+}
+
+span {
+	color: var(--Purple);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
