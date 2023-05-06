@@ -6,9 +6,10 @@ btn.addEventListener("click", (event) => {
     const day = parseInt(document.querySelector("#day").value);
     const month = parseInt(document.querySelector("#month").value);
     const year = parseInt(document.querySelector("#year").value);
-    if (!isError(day, month, year)) {
+    const today = new Date();
+    if (!isError(day, month, year, today)) {
         const dateUser = new Date(`${year}-${month}-${day}`);
-        const { dayDiff, monthDiff, yearDiff } = calculDiffDate(dateUser);
+        const { dayDiff, monthDiff, yearDiff } = calculDiffDate(dateUser, today);
         const dayResult = document.querySelector(".dayResult");
         const monthResult = document.querySelector(".monthResult");
         const yearResult = document.querySelector(".yearResult");

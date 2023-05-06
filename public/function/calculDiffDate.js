@@ -1,5 +1,4 @@
-export function calculDiffDate(dateUser) {
-    const today = new Date();
+export function calculDiffDate(dateUser, today) {
     const diff = new Date(today.getTime() - dateUser.getTime());
     const yearDiff = diff.getUTCFullYear() - 1970;
     const monthDiff = diff.getUTCMonth();

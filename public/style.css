@@ -83,6 +83,11 @@ input {
 
 .error {
 	display: none;
+	color: var(--LightRed);
+	font-style: italic;
+	font-weight: var(--small);
+	font-size: 14px;
+	line-height: 21px;
 }
 
 .lineValid {
