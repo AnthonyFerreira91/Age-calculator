@@ -26,12 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-![myScreenshot](https://github.com/Matrixfrpro33/column-review-card-component/blob/e094162c66db6b80c55491457b84fce989b9ea3a/screenshot/Screenshot%20-3-column%20preview%20card%20component.png)
+![myScreenshot](https://github.com/Matrixfrpro33/Age-calculator/blob/681f30c91a5f313c7aebc6d44cf537468d530499/screenshot/Screenshot%20-%20Age%20calculator.png)
 
 ### Links
 
-- Solution URL: [https://www.frontendmentor.io/solutions/interactive-rating-component-html-css-flexbox-js-OJuzsgmvX8](https://www.frontendmentor.io/solutions/interactive-rating-component-html-css-flexbox-js-OJuzsgmvX8)
-- Live Site URL: https://column-review-card-component-980oc5pld-matrixfrpro33.vercel.app/](https://column-review-card-component-980oc5pld-matrixfrpro33.vercel.app/)
+- Solution URL: [https://www.frontendmentor.io/solutions/age-calculator-html-css-typescript-Hz6E8lbgY4](https://www.frontendmentor.io/solutions/age-calculator-html-css-typescript-Hz6E8lbgY4)
+- Live Site URL: [https://age-calculator-exsmn2jud-matrixfrpro33.vercel.app/](https://age-calculator-exsmn2jud-matrixfrpro33.vercel.app/)
 
 ### Built with
 
@@ -44,3 +44,4 @@ Users should be able to:
 ## Author
 
 - Frontend Mentor - [@Matrixfrpro33](https://www.frontendmentor.io/profile/Matrixfrpro33)
+- Git-Hub - [@Matrixfrpro33](https://github.com/Matrixfrpro33)
