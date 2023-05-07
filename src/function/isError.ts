@@ -1,40 +1,32 @@
-export function isError(day: number, month: number, year: number, today: Date): boolean {
+import { drawRedError } from "./drawRedError.js";
+
+export function isError(day: number, month: number, year: number, today: Date) {
 	let error = false;
-	const errorDay = document.querySelector(".errorDay") as HTMLParagraphElement;
-	const errorMonth = document.querySelector(".errorMonth") as HTMLParagraphElement;
-	const errorYear = document.querySelector(".errorYear") as HTMLParagraphElement;
+	drawRedError("clean");
+
 	const maxDays = new Date(year, month, 0).getDate();
-	errorDay.style.display = "none";
-	errorMonth.style.display = "none";
-	errorYear.style.display = "none";
 
 	if (isNaN(day)) {
-		errorDay.innerHTML = "This field is required";
-		errorDay.style.display = "block";
+		drawRedError("day", "This field is required");
 		error = true;
 	} else if (day < 1 || day > maxDays) {
-		errorDay.innerHTML = "Must be a valid day";
-		errorDay.style.display = "block";
+		drawRedError("day", "Must be a valid day");
 		error = true;
 	}
 
 	if (isNaN(month)) {
-		errorMonth.innerHTML = "This field is required";
-		errorMonth.style.display = "block";
+		drawRedError("month", "This field is required");
 		error = true;
 	} else if (month < 1 || month > 12) {
-		errorMonth.innerHTML = "Must be a valid month";
-		errorMonth.style.display = "block";
+		drawRedError("month", "Must be a valid month");
 		error = true;
 	}
 
 	if (isNaN(year)) {
-		errorYear.innerHTML = "This field is required";
-		errorYear.style.display = "block";
+		drawRedError("year", "This field is required");
 		error = true;
-	} else if (year < 1970 || year > today.getFullYear()) {
-		errorYear.innerHTML = "Must be a valid year";
-		errorYear.style.display = "block";
+	} else if (year < 1950 || year > today.getFullYear()) {
+		drawRedError("year", "Must be a valid year");
 		error = true;
 	}
 

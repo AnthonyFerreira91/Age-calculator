@@ -6,13 +6,13 @@ btn.addEventListener("click", (event) => {
     const day = parseInt(document.querySelector("#day").value);
     const month = parseInt(document.querySelector("#month").value);
     const year = parseInt(document.querySelector("#year").value);
+    const dayResult = document.querySelector(".dayResult");
+    const monthResult = document.querySelector(".monthResult");
+    const yearResult = document.querySelector(".yearResult");
     const today = new Date();
     if (!isError(day, month, year, today)) {
         const dateUser = new Date(`${year}-${month}-${day}`);
         const { dayDiff, monthDiff, yearDiff } = calculDiffDate(dateUser, today);
-        const dayResult = document.querySelector(".dayResult");
-        const monthResult = document.querySelector(".monthResult");
-        const yearResult = document.querySelector(".yearResult");
         dayResult.innerHTML = dayDiff.toString();
         monthResult.innerHTML = monthDiff.toString();
         yearResult.innerHTML = yearDiff.toString();
